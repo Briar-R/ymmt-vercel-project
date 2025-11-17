@@ -1,0 +1,53 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>夢限大みゅーたいぷ 切り抜き動画</title>
+    <style>
+        body { font-family: sans-serif; margin: 20px; }
+        .container { max-width: 900px; margin: auto; }
+        .filter-buttons button { margin: 5px; cursor: pointer; }
+        .item-list { display: flex; flex-wrap: wrap; gap: 20px; }
+        .item { border: 1px solid #ccc; padding: 10px; border-radius: 8px; width: 300px; }
+        h1, h2 { border-bottom: 2px solid #eee; padding-bottom: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>夢限大みゅーたいぷ 切り抜きチャンネル・動画集</h1>
+        
+        <hr>
+
+        <section id="channels-section">
+            <h2>チャンネル一覧</h2>
+            <div class="filter-buttons">
+                </div>
+            <div id="channels-list" class="item-list">
+                </div>
+        </section>
+
+        <hr>
+
+        <section id="videos-section">
+            <h2>動画一覧</h2>
+            <div class="filter-buttons">
+                </div>
+            <div id="videos-list" class="item-list">
+                </div>
+        </section>
+        
+        <!-- 再生数ランキングセクションを復元 -->
+        <hr>
+
+        <section id="stats-section">
+            <h2>再生数ランキング (過去30日)</h2>
+            <div id="stats-list" class="item-list">
+                <!-- データがここに表示されます -->
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
